@@ -1,0 +1,25 @@
+.logos {
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.logos__item.slick-slide {
+    padding: 20px;
+
+    cursor: grab;
+
+    outline: none;
+    display: flex;
+
+    justify-content: center;
+    
+    img {
+        text-align: center;
+        width: auto;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+

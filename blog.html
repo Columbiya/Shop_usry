@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Work+Sans:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/blog.css">
+</head>
+<body>
+    <header id = "header" class="header">
+        <div class="container">
+            <div class="header__inner row justify-content-between align-items-center">
+                <div class="header__logo">
+                    <a href="index.html"><img id="header__logo-image" class="header__logo-image" src="images/header/logo-black.png" alt="logo Snow"></a>
+                </div>
+                <nav class="header__nav row">
+                    <a class="header__nav-link" href="index.html">about</a>
+                    <a class="header__nav-link" href="index.html">contact</a>
+                    <a class="header__nav-link" href="portfolio.html">portfolio</a>
+                    <a class="header__nav-link active" href="blog.html">blog</a>
+                </nav>
+                <div class="header__burger">
+                    <img id="burger" class="burger" src="images/header/open-menu.svg" alt="burger">
+                </div>
+                <div id="substrate" class="substrate"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog">
+        <div class="filter">
+            <div class="container">
+                <div class="filter-image row justify-content-center">
+                    <img id="open-filter" class="switch-image" src="images/switch/1.png" alt="switch">
+                </div>
+                <nav class="filter__nav row justify-content-center">
+                    <a id="show-all" class="nav-link" href="#">All</a>
+                    <a class="nav-link show-filter" href="#">nature</a>
+                    <a class="nav-link show-filter" href="#">branding</a>
+                    <a class="nav-link show-filter" href="#">cities</a>
+                    <a class="nav-link show-filter" href="#">design</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row blog__inner">
+
+                <!--First col-->
+                <div class="col-lg-4 col-12">
+                    <div class="blog__item" data-filter="nature">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">nature</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Something I need to tell you</a></h3>
+                            <div class="blog__item-date">
+                                may 16, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Mauris sed odio tincidunt, volutpat gue, 
+                                    commodo dui. Phasellus hendrerit condi 
+                                    ntum vehicula.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="branding">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">branding</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Are you doing The Right Way?</a></h3>
+                            <div class="blog__item-date">
+                                May 28, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Curabitur et diam ut magna pulvinar euis 
+                                    mod. Sed metus purus, ornare id mole,
+                                    laoreet vitae magna.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="nature">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x370" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">nature</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Five things about Nature</a></h3>
+                            <div class="blog__item-date">
+                                june 03, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Aenean libero erat, sollicitudin in enim, 
+                                    egestas convallis arcu. Nunc ligula felis, 
+                                    cursus nec pellentesque at.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <!--Second col-->
+
+                <div class="col-lg-4 col-12 m-0-auto">
+                    <div class="blog__item" data-filter="cities">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x370" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">cities</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Here's a Simple Trick</a></h3>
+                            <div class="blog__item-date">
+                                May 22, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Aenean libero erat, sollicitudin in enim, 
+                                    egestas convallis arcu. Nunc ligula felis, 
+                                    cursus nec pellentesque at.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="design">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">design</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Ten things about Photography</a></h3>
+                            <div class="blog__item-date">
+                                May 31, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Nulla eget libero sed lacus tempor sod, 
+                                    eu vel est. Suspendisse sit amet nulla 
+                                    justo viverra tempus.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="branding">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">branding</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">The History of Branding</a></h3>
+                            <div class="blog__item-date">
+                                june 08, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Quisque semper egestas nisi a vestibul. 
+                                    Nullam placerat justo libero, et dapibus 
+                                    lus ultricies sed.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+
+                <!--Third col-->
+
+                <div class="col-lg-4 col-12 m-0-auto">
+                    <div class="blog__item" data-filter="nature">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">nature</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">The History Of Nature</a></h3>
+                            <div class="blog__item-date">
+                                May 25, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Proin euismod et nisl eu luctus. Vestib
+                                    maximus molestie accumsan. Etiam vitae 
+                                    est arcu. Morbi sit amet dui ex.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="design">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x240" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">design</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">Why you should Always First</a></h3>
+                            <div class="blog__item-date">
+                                june 01, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Mauris sed odio tincidunt, volutpat gue, 
+                                    commodo dui. Phasellus hendrerit condi 
+                                    ntum vehicula.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+
+                    <div class="blog__item" data-filter="cities">
+                        <header class="blog__item-header">
+                            <div class="blog__item_image">
+                                <a href="blog-single.html"><img src="http://placehold.it/370x370" alt=""></a>
+                                <a class="blog__item-label" href="#">
+                                    <span class="label-bg-hover" aria-hidden="true"></span>
+                                    <span class="label-text">cities</span>       
+                                </a>
+                            </div>
+                        </header>
+                        <footer class="blog__item-footer">
+                            <h3 class="blog__item-footer-title"><a href="blog-single.html">My Favorite Place on earth is...</a></h3>
+                            <div class="blog__item-date">
+                                june 12, 2016
+                            </div>
+                            <div class="blog__item-text">
+                                <p>
+                                    Vestibulum maximus molestie accumsan. 
+                                    Etiam vitae est arcu. Morbi sit amet ex.
+                                </p>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner row justify-content-between">
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">About Us</h3>
+                    <div class="footer__col-text">
+                        <p>
+                            Aenean mattis augue in arcu tempor bibendum. 
+                            Nam euismod facilisis magna, quis pharetra turpis 
+                            molestie eu. Integer feugiat arcu sit amet leo 
+                            ullamcorper feugiat efficitur.
+                        </p>
+                    </div>
+                    <div class="row footer__col-social">
+                        <img class="footer__col-social-icon" src="images/footer/facebook.svg" alt="Facebook">
+                        <img class="footer__col-social-icon" src="images/footer/instagram.svg" alt="Instagram">
+                        <img class="footer__col-social-icon" src="images/footer/google-plus.svg" alt="Google Plus">
+                        <img class="footer__col-social-icon" src="images/footer/twitter.svg" alt="Twitter">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">Latest Twits</h3>
+                    <ul class="twits-list">
+                        <li class="twit__item">
+                            <a href="#">
+                                Duis eget finibus nibh. Vivamus sagittis 
+                                vulputate risus ac tincidunt.
+                            </a>
+                        </li>
+                        <li class="twit__item">
+                            <a href="#">
+                                Nam semper tortor sit amet arcu malesu
+                                ada, a sagittis tellus facilisis.
+                            </a>
+                        </li>
+                        <li class="twit__item">
+                            <a href="#">
+                                Etiam cursus, tortor id pretium tincidunt, 
+                                justo leo porta magna.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">Instagram</h3>
+                    <div class="footer__col-gallery row justify-content-between">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer__lower">
+        © 2016. Created by Unvab.
+    </footer>
+
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

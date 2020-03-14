@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700|Work+Sans:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="scss/portfolio.css">
+</head>
+<body>
+    <header id = "header" class="header">
+        <div class="container">
+            <div class="header__inner row justify-content-between align-items-center">
+                <div class="header__logo">
+                    <a href="index.html"><img id="header__logo-image" class="header__logo-image" src="images/header/logo-black.png" alt="logo Snow"></a>
+                </div>
+                <nav class="header__nav row">
+                    <a class="header__nav-link" href="index.html">about</a>
+                    <a class="header__nav-link" href="index.html">contact</a>
+                    <a class="header__nav-link active" href="#">portfolio</a>
+                    <a class="header__nav-link" href="blog.html">blog</a>
+                </nav>
+                <div class="header__burger">
+                    <img id="burger" class="burger" src="images/header/open-menu.svg" alt="burger">
+                </div>
+                <div id="substrate" class="substrate"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="filter">
+        <div class="container">
+            <div class="filter-image row justify-content-center">
+                <img id="open-filter" class="switch-image" src="images/switch/1.png" alt="switch">
+            </div>
+            <nav class="filter__nav row justify-content-center">
+                <a id="show-all" class="nav-link" href="#">All</a>
+                <a class="nav-link show-filter" href="#">branding</a>
+                <a class="nav-link show-filter" href="#">print</a>
+                <a class="nav-link show-filter" href="#">photography</a>
+                <a class="nav-link show-filter" href="#">design</a>
+                <a class="nav-link show-filter" href="#">mockup</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <div class="container">
+            <div class="row">
+                <div data-filter="design" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="print" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="branding" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="mockup" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="mockup" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="design" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="photography" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="photography" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+                <div data-filter="mockup" class="col-12 col-md-6 col-lg-4 col-sm-6 p-0 filter__gallery-image">
+                    <a href="portfolio-single.html"><img class="filter-gallery-image" src="http://placehold.it//800x540" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="load-more col">
+       <a href="#">load more work</a>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner row justify-content-between">
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">About Us</h3>
+                    <div class="footer__col-text">
+                        <p>
+                            Aenean mattis augue in arcu tempor bibendum. 
+                            Nam euismod facilisis magna, quis pharetra turpis 
+                            molestie eu. Integer feugiat arcu sit amet leo 
+                            ullamcorper feugiat efficitur.
+                        </p>
+                    </div>
+                    <div class="row footer__col-social">
+                        <img class="footer__col-social-icon" src="images/footer/facebook.svg" alt="Facebook">
+                        <img class="footer__col-social-icon" src="images/footer/instagram.svg" alt="Instagram">
+                        <img class="footer__col-social-icon" src="images/footer/google-plus.svg" alt="Google Plus">
+                        <img class="footer__col-social-icon" src="images/footer/twitter.svg" alt="Twitter">
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">Latest Twits</h3>
+                    <ul class="twits-list">
+                        <li class="twit__item">
+                            <a href="#">
+                                Duis eget finibus nibh. Vivamus sagittis 
+                                vulputate risus ac tincidunt.
+                            </a>
+                        </li>
+                        <li class="twit__item">
+                            <a href="#">
+                                Nam semper tortor sit amet arcu malesu
+                                ada, a sagittis tellus facilisis.
+                            </a>
+                        </li>
+                        <li class="twit__item">
+                            <a href="#">
+                                Etiam cursus, tortor id pretium tincidunt, 
+                                justo leo porta magna.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-9 footer__col">
+                    <h3 class="footer__col-title">Instagram</h3>
+                    <div class="footer__col-gallery row justify-content-between">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                        <img class="gallery-image" src="http://placehold.it/85x85" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer__lower">
+        © 2016. Created by Unvab.
+    </footer>
+
+
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>

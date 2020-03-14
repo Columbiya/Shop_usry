@@ -1,0 +1,141 @@
+.footer {
+    background-color: $black;
+    padding: 9rem 0;
+
+    border-bottom: 1px solid #252525;
+
+    @media (max-width: 1200px) {
+        padding: 4rem 0;
+    }
+
+}
+
+.footer__col {
+    @media (max-width: 1200px) {
+        margin: 0 auto 3rem;
+        text-align: center;
+    }
+}
+
+.footer__col-title {
+    color: $white;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+
+    margin-bottom: 3rem;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.footer__col-text {
+    color: $dark-white;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', sans-serif;
+
+    margin-bottom: 4rem;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.footer__col-social-icon {
+    cursor: pointer;
+
+    width: 15px;
+    height: 15px;
+
+    transition: transform .2s linear;
+
+    &:not(:first-child) {
+        margin-left: 1rem;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.footer__col-social {
+    margin-left: 0;
+
+    @media (max-width: 1200px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.twit__item {
+    color: $dark-white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    padding-left: 3rem;
+
+    background: url('../images/footer/twitter.svg') no-repeat;
+    background-position: 0 7px;
+    background-size: 15px;
+
+    a {
+        color: $dark-white;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        padding-left: 0;
+        background-position: 40px 7px;
+    }
+
+    @media (max-width: 768px) {
+        background: none;
+    }
+
+    &:not(:first-child) {
+        margin-top: 2.5rem;
+    }
+}
+
+.footer__col-gallery {
+    padding-left: 15px;
+    img {
+        width: 23%;
+
+        margin-bottom: 1rem;
+
+        @media (max-width: 1200px) {
+
+            flex-basis: 23%;
+
+            margin-bottom: .5rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-left: 0;
+    }
+}
+
+.footer__lower {
+    text-align: center;
+    color: $dark-white;
+    font-size: 1.4rem;
+
+    padding: 3rem 0;
+    background-color: $black;
+}
+
+.gallery-image {
+    cursor: pointer;
+
+    transition: transform .2s linear;
+
+    &:hover {
+        transform: scale(1.1,1.1);
+    }
+}

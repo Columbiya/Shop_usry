@@ -1,0 +1,43 @@
+.leave-comment {
+    padding: 6rem 0;
+
+    background-color: #f6f6f6;
+}
+
+.comment-info {
+    margin-bottom: 3rem;
+}
+
+.form-input {
+    border: none;
+    outline: none;
+
+    padding: 2rem 1.5rem;
+
+    flex-grow: 1;
+
+    max-height: 100px;
+
+    &::placeholder {
+        color: $light-gray;
+        font-size: 1.4rem;
+    }
+}
+
+.post {
+    margin-top: 3rem;
+
+    padding: 2rem 2.5rem;
+
+    background-color: $black;
+
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.4rem;
+
+    transition: background-color .2s linear;
+
+    &:hover {
+        background-color: $gray;
+    }
+}

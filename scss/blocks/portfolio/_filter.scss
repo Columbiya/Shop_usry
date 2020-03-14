@@ -1,0 +1,44 @@
+.filter {
+    padding: 3rem;
+    background-color: #f6f6f6;
+}
+
+.filter__nav {
+    display: none;
+
+    margin-top: 2rem;
+
+    a {
+        text-decoration: none;
+        color: $gray;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        transition: color .2s linear;
+
+        &:not(:first-child) {
+            margin-left: 3rem;
+            @media (max-width: 520px) {
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+        }
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    @media (max-width: 520px) {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.switch-image {
+    cursor: pointer;
+    
+    width: 16px;
+    height: 16px;
+}

@@ -1,0 +1,26 @@
+.gallery {
+    background-color: #f6f6f6;
+
+    padding-bottom: 10rem;
+
+    @media (max-width: 574px) {
+        padding-bottom: 3rem;
+    }
+}
+
+.filter-gallery-image {
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: opacity .2s linear;
+
+    &:hover {
+        opacity: .4;
+    }
+}
+
+.filter__gallery-image {  
+    background-color: $black;
+}

@@ -1,0 +1,137 @@
+@keyframes slideInUpper {
+    from {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLower {
+    from {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+}
+
+.projects {
+    padding: 10rem 0;
+}
+
+.projects__header {
+    text-align: center;
+
+    margin-bottom: 6rem;
+}
+
+.projects__header-title {
+    margin-bottom: 3rem;
+
+    color: $black;
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+
+    @media (max-width: 576px) {
+        font-size: 2.8rem;
+    }
+}
+
+.projects__header-text {
+    font-size: 1.5rem;
+    color: $gray;
+
+    max-width: 687px;
+    margin: 0 auto;
+}
+
+.project__footer-img {
+    cursor: pointer;
+}
+
+.project__footer {
+    margin-bottom: 28px;
+    
+    position: relative;
+
+    background-color: black;  
+}
+
+.project__footer:hover .project__footer-img {
+    opacity: .5;
+}
+
+.project__footer:hover .project__footer-hover {
+    animation: slideInUpper .5s linear;
+    animation-fill-mode: forwards;
+}
+
+.slideOutLower-content {
+    animation: slideOutLower .5s linear;
+    animation-fill-mode: forwards;
+}
+
+.project__footer img {
+    transition: opacity .2s linear;
+}
+
+.project__footer-hover {
+    opacity: 0;
+
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+
+    cursor: pointer;
+    
+    transform: translate(-50%, 0);
+
+    transition: opacity .2s linear;
+
+    h4 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-family: 'Playfair Display', sans-serif;
+        color: $white;
+        font-style: italic;
+        
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 500;
+        font-style: italic;
+        
+        color: $white;
+    }
+}
+
+.project__text {
+    height: 235px;
+
+    margin-bottom: 28px;
+}
+.project__text-name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+
+    margin-bottom: 2.5rem;
+}
+
+.project__text-profession {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+

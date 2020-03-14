@@ -1,0 +1,58 @@
+.counter {
+    padding: 10rem 0;
+
+    background: url('../images/about/bg.jpg') center no-repeat;
+    background-size: cover;
+
+    overflow-x: hidden;
+
+    @media (max-width: 576px) {
+        padding: 5rem 0;
+    }
+}
+
+.counter__item-img {
+    display: inline;
+}
+
+.secondLine {
+    @media (max-width: 540px) {
+        padding-top: 0;
+    }
+}
+
+.counter__item {
+    @media (max-width: 991px) {
+        &:not(:first-child) {
+            padding-top: 2rem;
+        }
+    }
+
+    @media (max-width: 540px) {
+        margin-left: 2rem;
+
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+.counter__item-content {
+    margin-left: 2rem;
+}
+
+.counter__item-number {
+    font-size: 1.8rem;
+    color: $white;
+    font-weight: 400;
+
+    margin-bottom: .5rem;
+}
+
+.counter__item-description {
+    color: $white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}

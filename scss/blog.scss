@@ -1,0 +1,18 @@
+@import 'variables';
+
+.header {
+    position: relative;
+
+    transition: none;
+}
+
+.header__nav-link {
+    color: #5f5f5f;
+    
+    &:hover {
+        color: $black;
+    }
+}
+
+@import 'blocks/portfolio/filter';
+@import 'blocks/blog/blog';
